@@ -1,0 +1,27 @@
+.todoForm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.todoInput{
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    float: left;
+    box-sizing: border-box;
+}
+.formBtn{
+    border:none;
+    outline: none;
+    background-color: #ffc107;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0px 20px 20px 0px;
+}
