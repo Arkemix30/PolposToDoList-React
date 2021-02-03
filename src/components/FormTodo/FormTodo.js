@@ -2,9 +2,9 @@ import React, {useState}  from 'react';
 import './FormTodo.css'
 
 const FormTodo = (props) => {
+
         const [inputText, setInputText] = useState('');
         
-
         const OnChangeHandler = (e) => {
             setInputText(e.target.value);
         };
@@ -21,10 +21,13 @@ const FormTodo = (props) => {
 
         return (
             <div className="container">
+                <div className="row">
                 <form className="todoForm">
                     <input value={inputText} onChange={OnChangeHandler} type="text" placeholder="Enter a new task..." className="todoInput"/>
                     <input onClick={SubmitHandler} type="Submit" className="formBtn" value="Add Task"/>
                 </form>
+                </div>
+                
             </div>
             
         )

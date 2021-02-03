@@ -10,14 +10,11 @@ const ToDoList = () => {
 
     const addingTodo = (todo) => {
         if(!todo.text || /^\s*$/.test(todo.text)) {
-            alert('Please fill the "Enter new task" field')
+            alert('Please fill the "Enter new task" field');
             return
         } 
-
         const newTodos = [...todos, todo]
-
-        setTodos(newTodos)
-        console.log(...todos)
+        setTodos(newTodos);
     }
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {
